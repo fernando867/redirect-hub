@@ -1,0 +1,12 @@
+# Redirect hub — no build step. Netlify serves the repo root and reads _redirects.
+[build]
+  publish = "."
+  command = ""
+
+# Belt and braces: security headers on the hub itself.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"

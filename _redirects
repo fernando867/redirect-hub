@@ -1,0 +1,158 @@
+# =============================================================================
+# REDIRECT HUB — one Netlify site serving every legacy Fernando Labastida domain
+# Canonical destination: https://viralgeniusinstitute.com
+# Built 2026-08-10 from DOMAIN-CONSOLIDATION-CHECKLIST.md (2026-08-03)
+#
+# HOW THIS FILE WORKS
+#   - Netlify matches on the FULL URL when the "from" column includes a host.
+#   - FIRST MATCH WINS. Specific paths must appear ABOVE the catch-all wildcards.
+#   - 301! — the bang forces the redirect even if a local file would match.
+#   - A rule has zero effect until that domain's DNS points at this Netlify site.
+#     The file is safe to deploy before any DNS is moved.
+#
+# EVERY DESTINATION BELOW WAS VERIFIED HTTP 200 ON 2026-08-10.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# 1 · viralgeniusframework.com  →  DO THIS ONE FIRST
+#
+# This is the domain Perplexity currently quotes when asked "what is the Viral
+# Genius Framework," describing the retired VGF 1.0 content-cascade offer.
+# On 2026-08-08 it was a cited source. On 2026-08-10 it was the featured card.
+# Redirecting the homepage to /viral-genius-framework replaces the wrong answer
+# with the right one at the same address, which is the strongest possible signal.
+# -----------------------------------------------------------------------------
+
+https://viralgeniusframework.com/                                              https://viralgeniusinstitute.com/viral-genius-framework   301!
+https://viralgeniusframework.com/the-viral-genius-framework/                   https://viralgeniusinstitute.com/viral-genius-framework   301!
+https://viralgeniusframework.com/the-viral-genius-framework                    https://viralgeniusinstitute.com/viral-genius-framework   301!
+https://viralgeniusframework.com/the-viral-genius-content-amplification-system/ https://viralgeniusinstitute.com/viral-genius-framework  301!
+https://viralgeniusframework.com/the-viral-genius-prospecting-engine/          https://viralgeniusinstitute.com/viral-genius-framework   301!
+https://viralgeniusframework.com/about-fernando-labastida/                     https://viralgeniusinstitute.com/about                    301!
+https://viralgeniusframework.com/about-fernando-labastida                      https://viralgeniusinstitute.com/about                    301!
+https://viralgeniusframework.com/about-us/                                     https://viralgeniusinstitute.com/about                    301!
+https://viralgeniusframework.com/offerings/                                    https://viralgeniusinstitute.com/excavation               301!
+https://viralgeniusframework.com/contact-us/                                   https://viralgeniusinstitute.com/excavation               301!
+https://viralgeniusframework.com/viral-genius-templates/                       https://viralgeniusinstitute.com/resources                301!
+https://viralgeniusframework.com/podcast/                                      https://viralgeniusinstitute.com/resources                301!
+https://viralgeniusframework.com/blog/*                                        https://viralgeniusinstitute.com/blog                     301!
+https://viralgeniusframework.com/*                                             https://viralgeniusinstitute.com/viral-genius-framework   301!
+http://viralgeniusframework.com/*                                              https://viralgeniusinstitute.com/viral-genius-framework   301!
+https://www.viralgeniusframework.com/*                                         https://viralgeniusinstitute.com/viral-genius-framework   301!
+http://www.viralgeniusframework.com/*                                          https://viralgeniusinstitute.com/viral-genius-framework   301!
+
+
+# -----------------------------------------------------------------------------
+# 2 · labastida.com
+#
+# ~15 years of backlink history and the domain that currently answers
+# "who is Fernando Labastida." Sending it to /about routes that equity into the
+# entity page. The CCREATE Framework pages go to the framework that replaced it.
+# -----------------------------------------------------------------------------
+
+https://labastida.com/                                                          https://viralgeniusinstitute.com/about                   301!
+https://labastida.com/about/                                                    https://viralgeniusinstitute.com/about                   301!
+https://labastida.com/about                                                     https://viralgeniusinstitute.com/about                   301!
+https://labastida.com/services/                                                 https://viralgeniusinstitute.com/excavation              301!
+https://labastida.com/fernandos-portfolio/                                      https://viralgeniusinstitute.com/proof                   301!
+https://labastida.com/turn-your-business-into-digital-business-ccreate-framework/ https://viralgeniusinstitute.com/viral-genius-framework 301!
+https://labastida.com/sign-up-for-the-ccreate-mini-course/                      https://viralgeniusinstitute.com/viral-genius-framework  301!
+https://labastida.com/confirm-subscription/                                     https://viralgeniusinstitute.com/                        301!
+https://labastida.com/styles/                                                   https://viralgeniusinstitute.com/                        301!
+https://labastida.com/blog/*                                                    https://viralgeniusinstitute.com/blog                    301!
+https://labastida.com/*                                                         https://viralgeniusinstitute.com/about                   301!
+http://labastida.com/*                                                          https://viralgeniusinstitute.com/about                   301!
+https://www.labastida.com/*                                                     https://viralgeniusinstitute.com/about                   301!
+http://www.labastida.com/*                                                      https://viralgeniusinstitute.com/about                   301!
+
+
+# -----------------------------------------------------------------------------
+# 3 · getstartupbook.com
+#
+# The book offer is now a rung inside VGF; the Excavation is its successor.
+# Individual article URLs are mapped to their closest topical match so the
+# accumulated links land somewhere relevant rather than on a generic page.
+# -----------------------------------------------------------------------------
+
+https://getstartupbook.com/                                                     https://viralgeniusinstitute.com/excavation              301!
+https://getstartupbook.com/about/                                               https://viralgeniusinstitute.com/about                   301!
+https://getstartupbook.com/resources/                                           https://viralgeniusinstitute.com/resources               301!
+https://getstartupbook.com/the-startup-book-resources/                          https://viralgeniusinstitute.com/books/the-startup-book  301!
+https://getstartupbook.com/the-startup-book-official-launch-party/              https://viralgeniusinstitute.com/books/the-startup-book  301!
+https://getstartupbook.com/the-startup-book-street-team-sign-up/                https://viralgeniusinstitute.com/books/the-startup-book  301!
+https://getstartupbook.com/stop-being-a-commodity-provider-start-being-a-category-king-or-queen/ https://viralgeniusinstitute.com/one-unforgettable-idea 301!
+https://getstartupbook.com/commodity-power-imbalance/                           https://viralgeniusinstitute.com/sea-of-sameness         301!
+https://getstartupbook.com/write-a-book-now-4-steps-to-writing-a-successful-category-designing-book/ https://viralgeniusinstitute.com/books 301!
+https://getstartupbook.com/escribe-un-libro-ahora-4-pasos-para-escribir-un-exitoso-libro-de-diseno-de-categoria/ https://viralgeniusinstitute.com/books 301!
+https://getstartupbook.com/the-book-driven-advertising-method/                  https://viralgeniusinstitute.com/books                   301!
+https://getstartupbook.com/7-steps-to-become-the-leading-custom-software-provider-in-your-market/ https://viralgeniusinstitute.com/one-unforgettable-idea 301!
+https://getstartupbook.com/value-first-cold-outreach-how-to-stand-out-in-a-crowded-inbox/ https://viralgeniusinstitute.com/blog          301!
+https://getstartupbook.com/cold-emailing-efectivo-la-clave-para-establecer-tu-nueva-categoria/ https://viralgeniusinstitute.com/blog     301!
+https://getstartupbook.com/create-your-personal-brand-on-social-media/          https://viralgeniusinstitute.com/blog                    301!
+https://getstartupbook.com/start-an-email-newsletter/                           https://viralgeniusinstitute.com/blog                    301!
+https://getstartupbook.com/want-instant-trust-take-the-stage/                   https://viralgeniusinstitute.com/proof                   301!
+https://getstartupbook.com/how-to-create-a-multi-million-dollar-business-from-your-business-book-joe-pulizzi/ https://viralgeniusinstitute.com/books 301!
+https://getstartupbook.com/schedule-a-strategy-session/                         https://viralgeniusinstitute.com/excavation              301!
+https://getstartupbook.com/mini-course-thank-you/                               https://viralgeniusinstitute.com/resources               301!
+https://getstartupbook.com/workshops/                                           https://viralgeniusinstitute.com/resources               301!
+https://getstartupbook.com/webinars/                                            https://viralgeniusinstitute.com/resources               301!
+https://getstartupbook.com/webinar-*                                            https://viralgeniusinstitute.com/resources               301!
+https://getstartupbook.com/blog/*                                               https://viralgeniusinstitute.com/blog                    301!
+https://getstartupbook.com/*                                                    https://viralgeniusinstitute.com/excavation              301!
+http://getstartupbook.com/*                                                     https://viralgeniusinstitute.com/excavation              301!
+https://www.getstartupbook.com/*                                                https://viralgeniusinstitute.com/excavation              301!
+http://www.getstartupbook.com/*                                                 https://viralgeniusinstitute.com/excavation              301!
+
+
+# -----------------------------------------------------------------------------
+# 4 · strikemarketinginstitute.com
+#
+# No sitemap was reachable on 2026-08-10, so no per-path map could be built.
+# If interior URLs turn out to matter, add them ABOVE the wildcard.
+# The summit/flatline positioning is retired into the Institute.
+# -----------------------------------------------------------------------------
+
+https://strikemarketinginstitute.com/about*                                     https://viralgeniusinstitute.com/about                   301!
+https://strikemarketinginstitute.com/blog*                                      https://viralgeniusinstitute.com/blog                    301!
+https://strikemarketinginstitute.com/*                                          https://viralgeniusinstitute.com/                        301!
+http://strikemarketinginstitute.com/*                                           https://viralgeniusinstitute.com/                        301!
+https://www.strikemarketinginstitute.com/*                                      https://viralgeniusinstitute.com/                        301!
+http://www.strikemarketinginstitute.com/*                                       https://viralgeniusinstitute.com/                        301!
+
+
+# -----------------------------------------------------------------------------
+# 5 · aimarketingcasestudies.com   ⚠️  DO THIS ONE LAST
+#
+# ⚠️⚠️  THIS IS THE PRIMARY EMAIL DOMAIN (fernando@aimarketingcasestudies.com).
+# The WEBSITE redirects. The DOMAIN and its Workspace account live forever.
+# When pointing DNS: change the A record and the www CNAME ONLY.
+# NEVER TOUCH THE MX RECORDS. Verify with:  dig MX aimarketingcasestudies.com
+#
+# These rules are inert until DNS is moved, so their presence here is harmless.
+# -----------------------------------------------------------------------------
+
+https://aimarketingcasestudies.com/podcast*                                     https://viralgeniusinstitute.com/resources               301!
+https://aimarketingcasestudies.com/about*                                       https://viralgeniusinstitute.com/about                   301!
+https://aimarketingcasestudies.com/*                                            https://viralgeniusinstitute.com/                        301!
+http://aimarketingcasestudies.com/*                                             https://viralgeniusinstitute.com/                        301!
+https://www.aimarketingcasestudies.com/*                                        https://viralgeniusinstitute.com/                        301!
+http://www.aimarketingcasestudies.com/*                                         https://viralgeniusinstitute.com/                        301!
+
+
+# -----------------------------------------------------------------------------
+# NOT REDIRECTED — deliberate
+#
+# b2bevents.live  — a live Substack publication, not a legacy marketing site.
+#   It was NOT in the 2026-08-03 decision table. Redirecting it would kill a
+#   running publication. It has a separate problem worth solving on its own:
+#   only 411 characters of visible text render without JavaScript, so it is
+#   effectively invisible to AI crawlers. That is a content-surface decision,
+#   not a DNS one.
+#
+# youxai.live — appears in the VGI sameAs array; a live property, out of scope.
+# -----------------------------------------------------------------------------
+
+
+# Fallback for anyone hitting the hub's own Netlify URL directly.
+/*    /index.html   200
