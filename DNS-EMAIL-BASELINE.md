@@ -207,3 +207,63 @@ Current www:
   98.84.224.111
 ```
 
+---
+
+## 🚨 The DNS zones live at SiteGround. Read this twice.
+
+Confirmed by Fernando 2026-08-10: the registrars delegate to **SiteGround**, which hosts both the
+WordPress sites and the **DNS zones** — MX, SPF, DKIM and DMARC included. That is what the
+`*.spf.auto.dnssmarthost.net` includes are.
+
+### Where the change actually happens
+
+**Not at the registrar.** In SiteGround: *Site Tools → Domain → DNS Zone Editor.*
+
+Per domain, exactly two edits:
+
+| Record | Change to |
+|---|---|
+| `A` @ | `75.2.60.5` |
+| `CNAME` www | `vgi-redirect-hub.netlify.app` |
+
+Everything else in that zone stays exactly as it is. Nameservers do not move.
+
+### ⚠️ The trap: do not cancel SiteGround
+
+The obvious reason to retire these sites is to stop paying for them. **If the SiteGround account
+goes away, the DNS zones go with it — and the MX, SPF, DKIM and DMARC records for four domains
+carrying live Google Workspace mail disappear at the same moment.**
+
+Mail would not degrade. It would stop.
+
+Redirecting the websites is safe precisely *because* SiteGround keeps answering DNS. The redirect
+and the hosting cancellation are two different projects and must not be done in the same week.
+
+### If SiteGround is ever cancelled, this is the order
+
+1. Move each DNS zone to a permanent home — the registrar's own DNS, Cloudflare, or Netlify DNS.
+2. Recreate **every** record from this file: MX, SPF, DKIM, DMARC, verification TXT.
+   ⚠️ DKIM keys are long and split across two quoted strings in the lookups above. They must be
+   re-entered as a single value with no introduced whitespace.
+3. Update nameservers at the registrar and wait for full propagation.
+4. **Send and receive a test message on every one of the four mail domains.**
+5. Only then cancel SiteGround.
+
+This file is the source of truth for step 2. Do not delete it.
+
+### Useful side effect
+
+Once `A` points at Netlify, the WordPress installs still exist at SiteGround — they are simply no
+longer reachable by domain name. They stay accessible through SiteGround's temporary URL, which is
+how to retrieve the content worth salvaging:
+
+- `getstartupbook.com` — the Joe Pulizzi interview and the two Spanish-language articles
+- `aimarketingcasestudies.com` — the podcast episodes, if they live only on that install
+
+### One thing to check first
+
+These are live WordPress sites, so any of them may be sending mail through contact forms. That
+matters for the two domains carrying `+a` in SPF, above. Check for form notifications on
+`viralgeniusframework.com` before repointing it — it is first in the order and runs DMARC
+`p=reject`.
+
