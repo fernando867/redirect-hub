@@ -56,16 +56,16 @@ One folder per site.
 
 **Store both in Dropbox, one folder per domain.** Not on the laptop only.
 
-⚠️ **Check the podcast audio first.** If `aimarketingcasestudies.com`'s episodes live in that
-uploads folder rather than on a podcast host, that folder is the master copy and this is the
-highest-risk item in the entire decommission. Confirm before touching anything.
+✅ **Podcast audio is safe.** Confirmed 2026-08-10: the `aimarketingcasestudies.com` episodes are
+hosted on Substack, not in the WordPress uploads folder. Nothing on SiteGround is a master copy of
+anything. That was the only irreplaceable-asset risk in this project and it does not exist.
 
 ### Content specifically worth keeping
 
 | Site | What matters |
 |---|---|
 | `getstartupbook.com` | The Joe Pulizzi interview · **the two Spanish-language articles** — there is no Spanish content on viralgeniusinstitute.com and there is a Spanish-speaking network · the webinar pages with named guests |
-| `aimarketingcasestudies.com` | Podcast episodes. **Check whether the audio lives on a podcast host or only on this install.** If only here, this is the highest-risk item in the whole decommission. |
+| `aimarketingcasestudies.com` | Show-notes pages only — the audio lives on Substack. Little unique content; the site is near-empty at 1,737 visible characters. Lowest-value archive of the five. |
 | `labastida.com` | ~15 years of blog posts. Mostly superseded, occasionally quotable. |
 | `strikemarketinginstitute.com` | The most copy of any property, 17,058 characters. Recent, and the flatline framing may be worth cannibalising. |
 | `viralgeniusframework.com` | VGF 1.0 methodology pages. Historical record of the framework's earlier form. |
@@ -215,8 +215,7 @@ Only after every domain has been through steps 3–5 and mail has been verified 
 - [ ] The **VGF Google Drive folder** ("Viral Genius Methodology Documents") has been transferred
       out of the `fernando@viralgeniusframework.com` account — this gates that Workspace
       cancellation, separately from SiteGround
-- [ ] The podcast audio for `aimarketingcasestudies.com` is confirmed to live somewhere other than
-      the SiteGround install
+- [x] Podcast audio confirmed on Substack, not SiteGround — verified 2026-08-10
 
 Then cancel.
 
