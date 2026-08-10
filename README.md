@@ -58,10 +58,11 @@ This does not block the redirect. It blocks the account cancellation.
 
 **Step 1 — push this repo**
 
+The remote is already set to `https://github.com/fernando867/redirect-hub.git`.
+Create the empty repo on GitHub first (no README, no .gitignore, no licence), then:
+
 ```bash
-cd ~/Documents/GitHub/redirect-hub
-git remote add origin git@github.com:<your-account>/redirect-hub.git
-git push -u origin main
+cd ~/Documents/GitHub/redirect-hub && git push -u origin main
 ```
 
 **Step 2 — create the Netlify site**
