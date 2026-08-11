@@ -141,14 +141,44 @@ http://www.aimarketingcasestudies.com/*                                         
 
 
 # -----------------------------------------------------------------------------
+# 6 · b2bevents.live  →  the newsletter at its new address
+#
+# Retired 2026-08-10. The Substack publication moved from b2bevents.live to
+# newsletter.viralgeniusinstitute.com, dropping the seventh identity ("B2B Events
+# — scale your company with events in the age of infinite content").
+#
+# ⚠️ Substack does NOT redirect a retired custom domain. The moment it is
+# disabled there, every link in a year of sent emails 404s. These rules are the
+# replacement.
+#
+# A single wildcard is correct here, unlike every other domain in this file:
+# Substack post paths are identical across custom domains, so /p/some-article
+# maps cleanly to /p/some-article at the new host. Preserves the entire archive.
+#
+# NOT affected by any of this: the podcast. Its feed and audio live on
+# api.substack.com/feed/podcast/6299357.rss, not on the custom domain. Apple,
+# Spotify and every subscribed app keep working with no action.
+#
+# ⚠️ /feed IS affected. Anyone subscribed in an RSS reader to b2bevents.live/feed
+# stops receiving posts unless this redirect is live.
+# -----------------------------------------------------------------------------
+
+https://b2bevents.live/*        https://newsletter.viralgeniusinstitute.com/:splat   301!
+http://b2bevents.live/*         https://newsletter.viralgeniusinstitute.com/:splat   301!
+https://www.b2bevents.live/*    https://newsletter.viralgeniusinstitute.com/:splat   301!
+http://www.b2bevents.live/*     https://newsletter.viralgeniusinstitute.com/:splat   301!
+
+
+# -----------------------------------------------------------------------------
 # NOT REDIRECTED — deliberate
 #
-# b2bevents.live  — a live Substack publication, not a legacy marketing site.
-#   It was NOT in the 2026-08-03 decision table. Redirecting it would kill a
-#   running publication. It has a separate problem worth solving on its own:
-#   only 411 characters of visible text render without JavaScript, so it is
-#   effectively invisible to AI crawlers. That is a content-surface decision,
-#   not a DNS one.
+# (b2bevents.live moved to section 6 above — the publication was relocated to
+#  newsletter.viralgeniusinstitute.com on 2026-08-10, so the domain is now a
+#  legacy redirect like the rest. Its underlying problem is unchanged and still
+#  worth solving: only 411 characters render without JavaScript, so the
+#  publication is close to invisible to AI crawlers wherever it is hosted. The
+#  fix for that is publishing each issue as an article on the main site and
+#  syndicating to Substack, not a DNS change.)
 #
 # youxai.live — appears in the VGI sameAs array; a live property, out of scope.
 # -----------------------------------------------------------------------------
