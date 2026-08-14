@@ -44,27 +44,17 @@ http://www.viralgeniusframework.com/*                                          h
 
 
 # -----------------------------------------------------------------------------
-# 2 · labastida.com
+# 2 · labastida.com — REMOVED 2026-08-14. Decision reversed.
 #
-# ~15 years of backlink history and the domain that currently answers
-# "who is Fernando Labastida." Sending it to /about routes that equity into the
-# entity page. The CCREATE Framework pages go to the framework that replaced it.
+# labastida.com is now Fernando's personal entity home (a real Astro site,
+# repo: fernando867/labastida, its own Netlify project). Per Jason Barnard's
+# entity-home hierarchy the Person lives on the personal domain; only the
+# Organization lives on viralgeniusinstitute.com. The domain was reassigned
+# in Netlify on 2026-08-14, so rules here would never fire anyway.
+# Old WordPress deep links (services, portfolio, ccreate, blog) now resolve
+# on the new site or 404 there — intentional; the equity consolidates to the
+# Person entity, not to VGI.
 # -----------------------------------------------------------------------------
-
-https://labastida.com/                                                          https://viralgeniusinstitute.com/about                   301!
-https://labastida.com/about/                                                    https://viralgeniusinstitute.com/about                   301!
-https://labastida.com/about                                                     https://viralgeniusinstitute.com/about                   301!
-https://labastida.com/services/                                                 https://viralgeniusinstitute.com/excavation              301!
-https://labastida.com/fernandos-portfolio/                                      https://viralgeniusinstitute.com/proof                   301!
-https://labastida.com/turn-your-business-into-digital-business-ccreate-framework/ https://viralgeniusinstitute.com/viral-genius-framework 301!
-https://labastida.com/sign-up-for-the-ccreate-mini-course/                      https://viralgeniusinstitute.com/viral-genius-framework  301!
-https://labastida.com/confirm-subscription/                                     https://viralgeniusinstitute.com/                        301!
-https://labastida.com/styles/                                                   https://viralgeniusinstitute.com/                        301!
-https://labastida.com/blog/*                                                    https://viralgeniusinstitute.com/blog                    301!
-https://labastida.com/*                                                         https://viralgeniusinstitute.com/about                   301!
-http://labastida.com/*                                                          https://viralgeniusinstitute.com/about                   301!
-https://www.labastida.com/*                                                     https://viralgeniusinstitute.com/about                   301!
-http://www.labastida.com/*                                                      https://viralgeniusinstitute.com/about                   301!
 
 
 # -----------------------------------------------------------------------------
